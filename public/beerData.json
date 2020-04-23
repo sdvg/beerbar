@@ -1,0 +1,21 @@
+{
+  "beers": [
+    {
+      "id": 1,
+      "name": "Augustiner",
+      "price": 0.67
+    },
+    {
+      "id": 2,
+      "name": "Tegernseer",
+      "price": 1.16
+    },
+    {
+      "id": 3,
+      "name": "Astra",
+      "price": 0.55
+    }
+  ],
+  "deposit": 0.08,
+  "paypalName": "stefandietzeu"
+}
