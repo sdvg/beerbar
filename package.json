@@ -1,10 +1,9 @@
 {
-  "name": "svelte-app",
+  "name": "@sdvg/beerbar",
   "version": "1.0.0",
   "scripts": {
     "build": "rollup -c",
-    "dev": "rollup -c -w",
-    "start": "sirv public"
+    "dev": "rollup -c -w"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "11.0.2",
