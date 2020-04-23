@@ -24,7 +24,9 @@
 
 <p>
   Total: {formatPrice(total)}
-  <small>(incl. {formatPrice(depositSum)} deposit)</small>
+  {#if !returnsDeposit}
+    <small>(incl. {formatPrice(depositSum)} deposit)</small>
+  {/if}
 
   <button
     disabled="{total === 0}"
