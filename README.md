@@ -2,7 +2,7 @@
 
 A fun afternoon project to learn [Svelte](https://svelte.dev/):
 
-![Screenshot of the app](media/screenshot.png)
+<img alt="Screenshot of the app" src="media/screenshot.png" width="300">
 
 The "Pay Up" button leads to PayPal.me with the receiver and amount pre-filled.
 
