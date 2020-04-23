@@ -21,9 +21,11 @@
 
 <main>
   {#if beers}
-    <h1>🍺 What do you need?</h1>
+    <h1 class="title">🍺 What do you need?</h1>
     <Beers {beers} bind:selection />
-    <DepositChoice bind:returnsDeposit />
+    <div class="deposit-choice-container">
+      <DepositChoice bind:returnsDeposit />
+    </div>
     <Summary {beers} {deposit} {selection} {returnsDeposit} {paypalName} />
   {:else}
     <p>Loading...</p>
@@ -31,5 +33,11 @@
 </main>
 
 <style>
+  .title {
+    margin-bottom: 16px;
+  }
 
+  .deposit-choice-container {
+    margin: 16px 0;
+  }
 </style>

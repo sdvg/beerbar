@@ -1,0 +1,52 @@
+:root {
+  /* https://coolors.co/381b0c-d7cdc4-9b8877-ae8157-fded7f */
+  --color-1: #381b0c;
+  --color-2: #d7cdc4;
+  --color-3: #9b8877;
+  --color-4: #ae8157;
+  --color-5: #fded7f;
+}
+
+html {
+  background: var(--color-4);
+  color: var(--color-1);
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  padding: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}

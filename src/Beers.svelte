@@ -8,10 +8,26 @@
 
 <ul>
   {#each beers as {id, name, price}, beerIndex (id)}
-  <li>
+  <li class="beer">
     <StepCounter bind:value={selection[id]} />
-    {name}
+    <div class="name">{name}</div>
     ({formatPrice(price)})
   </li>
   {/each}
 </ul>
+
+<style>
+  .beer {
+    display: flex;
+    align-items: center;
+  }
+
+  .beer:not(:first-child) {
+    margin-top: 16px;
+  }
+
+  .name {
+    font-weight: bold;
+    margin: 0 4px 0 16px;
+  }
+</style>
