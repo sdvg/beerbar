@@ -18,7 +18,9 @@
   $: total = beerPriceSum + depositSum
 
   const redirectToPaypal = () => {
-    location.replace(`https://www.paypal.me/${paypalName}/${total}eur`)
+    const roundedTotal = Math.round(total * 100) / 100
+
+    location.replace(`https://www.paypal.me/${paypalName}/${roundedTotal}eur`)
   }
 </script>
 
